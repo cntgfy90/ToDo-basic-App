@@ -1,0 +1,97 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+#form {
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+#btnAdd {
+	width: 100px;
+	background: #2057;
+	cursor: pointer;
+}
+
+#input, #search {
+	width: 35%;
+}
+
+#todo, #done {
+	width: 40%;
+	list-style: none;
+	padding-left: 0;
+}
+
+#search-list {
+	width: 60%;
+	list-style: none;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+.lists {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+}
+
+#todo li.todo-li,
+#done li.todo-li,
+#search-list li.todo-li {
+	background-color: #f3f3f3;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 4px 4px 1px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+#todo span.title,
+#done span.title,
+#search-list span.title {
+	float:left;
+	color: #000;
+	font-size: 20px;
+}
+
+#todo span.delete,
+#todo span.done,
+#done span.delete,
+#done span.done,
+#search-list span.delete,
+#search-list span.done {
+	float: right;
+}
+
+#todo li.todo-li:after,
+#done li.todo-li:after,
+#search-list li.todo-li:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#todo button.delete-btn,
+#todo button.done-btn,
+#done button.delete-btn,
+#done button.done-btn,
+#search-list button.delete-btn,
+#search-list button.done-btn {
+	background: #614;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 10px;
+}
