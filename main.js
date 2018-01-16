@@ -53,34 +53,9 @@ Array.from(ul).forEach(function(ul){
 	});
 });
 
-
-
-// var getLis = function(){
-// 	var lis = document.querySelectorAll('.todo-li');
-// 	console.log(lis)
-// };
-
-// getLis()
-
-
-
 search.addEventListener('keyup', function(){
 	var lis = document.querySelectorAll('.todo-li');
-	// var cloneArrLi = [];
-	// for (var i = 0; i < lis.length; i++) {
-	// 	cloneArrLi.push(lis[i].cloneNode(true));
-	// }
-
-	// for (var j = 0; j < cloneArrLi.length; j++) {
-	// 	var title = cloneArrLi[j].querySelector('.title').textContent;
-
-	// 	if (title.toLowerCase().indexOf(input.value.toLowerCase()) != -1) {
-	// 		searchList.appendChild('asd')
-	// 	}
-	// }
-
-
-
+	
 	Array.from(lis).forEach(function(li) {
 		var title = li.firstElementChild.textContent;
 
@@ -93,34 +68,4 @@ search.addEventListener('keyup', function(){
 		}	
 	});
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// todo.addEventListener('click', function(event){
-// 	var btnDelArr = Array.from(todo.querySelectorAll('.delete-btn'));
-// 	var btnDoneArr = Array.from(todo.querySelectorAll('.done-btn'));
-
-// 	btnDelArr.forEach(function(btnDel) {
-// 		if (event.target == btnDel) {
-// 			todo.removeChild(todo.childNodes[0]);
-// 		}
-// 	});
-
-// 	btnDoneArr.forEach(function(btnDone) {
-// 		if (event.target == btnDone) {
-// 			console.log(btnDone.parentNode)
-// 			done.insertBefore(todo.childNodes[0], done.childNodes[0]);
-// 		}
-// 	})
-// });
 
